@@ -64,6 +64,15 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    cd catkin_ws/
    catkin build
    ```
+ * Install libuvc
+   ```
+   git clone https://github.com/libuvc/libuvc.git
+   cd libuvc
+   mkdir build && cd build
+   cmake .. && make -j4
+   sudo make install
+   sudo ldconfig
+   ```
  * Clone 3D Camera Package frome ros_astra_camera
     ```
     cd ~/catkin_ws/src
@@ -77,10 +86,9 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
     source ./devel/setup.bash
     roscd astra_camera
     ./scripts/create_udev_rules
-    sudo udevadm control --reload && sudo  udevadm trigger
+    sudo udevadm control --reload && sudo udevadm trigger
     source ./devel/setup.bash 
     ```
-
  * Clone LiDAR Package frome rplidar_ros
     ```
     cd ~/catkin_ws/src
