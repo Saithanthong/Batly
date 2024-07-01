@@ -27,5 +27,23 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    ```
    sudo apt-get install ros-melodic-slam-gmapping rviz robot-localization tf tf2* imu-filter-madgwick map-server navigation teleop-twist-keyboard hector-imu-tools hector-slam
    sudo apt-get install python-catkin-tools
-   sudo apt update && upgrade
+   sudo apt update
+   sudo apt upgrade
    ```
+* If unable to upgrade Follow this command
+  ```
+  # move /var/lib/info/ and create new /var/lib/dpkg/info
+  sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/backup/
+  sudo mkdir /var/lib/dpkg/info/
+  
+  #update repos and force install
+  sudo apt-get update
+  sudo apt-get -f install
+
+  #Move the new structure dpkg/info to old info
+  sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/backup/
+
+  #Remove the new dpkg structure folder and back the old
+  sudo rm -rf /var/lib/dpkg/info
+  sudo mv /var/lib/dpkg/backup/ /var/lib/dpkg/info/
+  ```
