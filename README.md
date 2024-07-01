@@ -25,7 +25,11 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
  * After finished install arduino IDE and Teensyduino please refer to Arduino IDE Setup https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 ## Install dependencies
    ```
-   sudo apt-get install ros-melodic-slam-gmapping rviz robot-localization tf tf2* imu-filter-madgwick map-server navigation teleop-twist-keyboard hector-imu-tools hector-slam
+   sudo apt-get install ros-melodic-slam-gmapping ros-melodic-rviz ros-melodic-robot-localization ros-melodic-tf ros-melodic-tf2*
+   sudo apt-get install ros-melodic-imu-filter-madgwick ros-melodic-map-server ros-melodic-navigation
+   sudo apt-get install ros-melodic-teleop-twist-keyboard ros-melodic-hector-imu-tools ros-melodic-hector-slam
+   sudo apt install libgflags-dev ros-melodic-image-geometry ros-melodic-camera-info-manager
+   sudo apt install ros-melodic-image-transport sudo apt install ros-melodic-image-transport libusb-1.0-0-dev libeigen3-dev
    sudo apt-get install python-catkin-tools
    sudo apt update
    sudo apt upgrade
@@ -51,8 +55,28 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
   sudo apt update
   sudo apt upgrade
   ```
-
-
+# Getting start
+ * Clone The Batly workspace
+   ```
+   git clone https://github.com/batly.git
+   cd catkin_ws/
+   catkin build
+   ```
+ * Clone 3D camera package frome ros_astra_camera
+    ```
+    cd ~/catkin_ws/src
+    git clone https://github.com/orbbec/ros_astra_camera.git
+    cd ~/catkin_ws
+    catkin build
+    ```
+ * Install udev rules
+    ```
+    cd ~/catkin_ws
+    source ./devel/setup.bash
+    roscd astra_camera
+    ./scripts/create_udev_rules
+    sudo udevadm control --reload && sudo  udevadm trigger
+    ```
 
 
 
