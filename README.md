@@ -57,7 +57,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
   sudo apt update
   sudo apt upgrade
   ```
-# Getting start
+## Getting start
  * Clone The Batly workspace
    ```
    git clone https://github.com/batly.git
