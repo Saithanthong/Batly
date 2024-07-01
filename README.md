@@ -30,7 +30,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    sudo apt update
    sudo apt upgrade
    ```
-* If unable to upgrade Follow this command
+* If unable to upgrade Follow this commands
   ```
   # move /var/lib/info/ and create new /var/lib/dpkg/info
   sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/backup/
@@ -46,4 +46,21 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
   # remove the new dpkg structure folder and back the old
   sudo rm -rf /var/lib/dpkg/info
   sudo mv /var/lib/dpkg/backup/ /var/lib/dpkg/info/
+
+  # update and upgrade again
+  sudo apt update
+  sudo apt upgrade
   ```
+
+
+
+
+
+
+
+
+
+
+
+
+  
