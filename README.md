@@ -22,7 +22,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    chmod 755 TeensyduinoInstall.linuxaarch64
    ./TeensyduinoInstall.linuxaarch64
    ```
-  After finished install arduino IDE and Teensyduino please refer directly to Arduino IDE Setup https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
+  ** After finished install arduino IDE and Teensyduino please refer directly to Arduino IDE Setup https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 
 
 
