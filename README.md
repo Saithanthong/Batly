@@ -64,7 +64,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    cd catkin_ws/
    catkin build
    ```
- * Clone 3D camera package frome ros_astra_camera
+ * Clone 3D Camera Package frome ros_astra_camera
     ```
     cd ~/catkin_ws/src
     git clone https://github.com/orbbec/ros_astra_camera.git
@@ -78,9 +78,24 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
     roscd astra_camera
     ./scripts/create_udev_rules
     sudo udevadm control --reload && sudo  udevadm trigger
+    source ./devel/setup.bash 
     ```
 
+ * Clone LiDAR Package frome rplidar_ros
+    ```
+    cd ~/catkin_ws/src
+    git clone https://github.com/Slamtec/rplidar_ros.git
+    cd ~/catkin_ws
+    catkin build
+    ```
+ * rplidar ros package setup
+    ```
+    # Check the authority of rplidar's serial-port 
+    ls -l /dev |grep ttyUSB
 
+    # Add the authority of write: (such as /dev/ttyUSB0)
+    sudo chmod 666 /dev/ttyUSB0
+    ```
 
 
 
