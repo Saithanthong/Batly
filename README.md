@@ -15,7 +15,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
  * Teensyduino Download https://forum.pjrc.com/index.php?threads/teensyduino-1-57-beta-1.70196/   ( * Linux ARM64 )
    ```
    wget https://www.pjrc.com/teensy/00-teensy.rules
-   sudo cp 00-teensy.rules /ect/udev/rules.d/
+   sudo cp 00-teensy.rules /etc/udev/rules.d/
    sudo service udev reload
    sudo service udev restart
    cd Downloads/
