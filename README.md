@@ -29,7 +29,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    sudo apt-get install ros-melodic-imu-filter-madgwick ros-melodic-map-server ros-melodic-navigation
    sudo apt-get install ros-melodic-teleop-twist-keyboard ros-melodic-hector-imu-tools ros-melodic-hector-slam
    sudo apt install libgflags-dev ros-melodic-image-geometry ros-melodic-camera-info-manager
-   sudo apt install ros-melodic-image-transport ros-melodic-image-transport libusb-1.0-0-dev libeigen3-dev
+   sudo apt install ros-melodic-image-transport libusb-1.0-0-dev libeigen3-dev
    sudo apt-get install ros-melodic-rviz-imu-plugin
    sudo apt-get install libopencv3.2
    sudo apt-get install python-catkin-tools
