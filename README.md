@@ -92,6 +92,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
     roscd astra_camera
     ./scripts/create_udev_rules
     sudo udevadm control --reload && sudo udevadm trigger
+    cd ~/catkin_ws
     source ./devel/setup.bash 
     ```
  * Clone LiDAR Package frome rplidar_ros
