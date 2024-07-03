@@ -9,7 +9,7 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
    ```
    cd Downloads/
    tar -xvf arduino-1.8.19-linuxaarch64.tar.xz
-   cd arduino-1.1.19/
+   cd arduino-1.8.19/
    sudo ./install.sh
    ```
  * Teensyduino Download https://forum.pjrc.com/index.php?threads/teensyduino-1-57-beta-1.70196/   ( * Linux ARM64 )
