@@ -58,8 +58,13 @@ The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) 
   sudo apt upgrade
   ```
 ## Getting start
+ * Create Workspace
+   ```
+   mkdir -p ~/catkin_ws/src
+   ```
  * Clone The Batly workspace
    ```
+   cd catkin_ws/src/
    git clone https://github.com/batly.git
    cd catkin_ws/
    catkin build
