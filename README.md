@@ -3,7 +3,7 @@ The Batly package is created for Batly Robot.
 The package allows the usage of orbbec 3D camera (astra pro plus), RPLiDAR (C1) with OKDO Nano C100 in ROS Melodic distributions
 
 ## ROS
- * Please refer directly to ROS https://wiki.ros.org/melodic/Installation/Ubuntu    ( * Installation >> Desktop-Full Install )
+ * Please refer directly to ROS https://wiki.ros.org/melodic/Installation/Ubuntu 
 ## Arduino IDE and Install Teensyduino
  * Arduino IDE 1.8.19 https://www.arduino.cc/en/software  ( * Arduino IDE 1.8.19 >> Linux ARM 64 bits )
    ```
