@@ -1,0 +1,34 @@
+<launch>
+    <!-- Map server -->
+    <arg name="map" default="$(find batly)/map/rtl02.yaml"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)">
+      <param name="frame_id" value="map" />
+    </node>
+
+    <!-- AMCL used for localization -->
+    <include file="$(find batly)/launch/include/amcl.launch" />
+    
+    <!-- Calls navigation stack packages for compatible Linorobot base -->
+    <!-- Takes reference from env variable LINOBASE. ie. export LINOBASE=2wd -->
+    <include file="$(find batly)/launch/include/move_base/move_base_mecanum.launch" />
+
+    <!-- IMU Relay and Filter -->
+    <include file="$(find batly)/launch/include/imu/imu.launch" />
+
+    <!-- Publish Batlyrobot odometry -->
+    <node pkg="batly" name="odom_batly" type="odom"></node>
+
+    <!-- Publish static transform from base_footprint to base_link -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0.082 0 0 0 /base_footprint /base_link" />
+
+    <!-- Odom-IMU Extended Kalman Filter-->
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization"> 
+        <remap from="odometry/filtered" to="odom" />
+        <rosparam command="load" file="$(find batly)/param/ekf/robot_localization.yaml" />
+    </node>
+
+    <!-- rviz -->
+
+    <!-- Run Batlyrobot compatible laser drivers -->
+    <include file="$(find batly)/launch/include/laser.launch" />
+</launch>
