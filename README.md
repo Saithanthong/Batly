@@ -2,11 +2,11 @@
 Batly robot operates on system Ubuntu 18.04 - ROS Melodic and works together with OKDO nano c100 
 
 
-## installation ROS
+## ROS Installation 
 https://wiki.ros.org/melodic/Installation/Ubuntu
 
 
-## Installation Arduino
+## Arduino Installation 
 https://www.arduino.cc/en/software
 
 ```
@@ -16,7 +16,7 @@ cd arduino 1.8.19/
 sudo ./install.sh
 ```
 
-## Installation Teensyduino
+## Teensyduino Installation
 ```
 wget https://www.pjrc.com/teensy/00-teensy.rules
 sudo cp 00-teensy.rules /etc/udev/rules.d/
@@ -27,7 +27,7 @@ chmod 755 TeensyduinoInstall.linuxaarch64
 ./TeensyduinoInstall.linuxaarch64
 ```
 
-## Installation ros-drivers
+## Ros-Drivers Installation
 ```
 git clone https://github.com/ros-drivers/libuvc_ros.git
 cd libuvc/
@@ -38,7 +38,7 @@ sudo ldconfig
 ```
 
 
-### installation Inpendencies
+### Inpendencies Installation
 ```
 sudo apt-get install ros-melodic-slam-gmapping 
 sudo apt-get install ros-melodic-rviz
