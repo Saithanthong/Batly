@@ -38,7 +38,7 @@ sudo ldconfig
 ```
 
 
-## installation Inpendencies
+### installation Inpendencies
 ```
 sudo apt-get install ros-melodic-slam-gmapping 
 sudo apt-get install ros-melodic-rviz
@@ -70,3 +70,30 @@ cd catkin_ws/
 git clone https://github.com/Saithanthong/Batly.git
 cd ~/catkin_ws/
 catkin build
+```
+
+
+## Mapping Mode
+### Mapping with keyboard
+```
+roscore
+rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+roslaunch batly mapping.launch
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+
+### Mapping with joy-stick
+```
+roscore
+rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+roslaunch batly mapping.launch
+roslaunch teleop_twist_joy teleop.launch
+```
+
+## Navigation Mode
+```
+roscore
+rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+roslaunch batly navigation.launch
+```
