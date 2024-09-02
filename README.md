@@ -69,4 +69,4 @@ mkdir catkin_ws
 cd catkin_ws/
 git clone https://github.com/Saithanthong/Batly.git
 cd ~/catkin_ws/
-catkin bui
+catkin build
