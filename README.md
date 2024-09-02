@@ -6,6 +6,7 @@ Batly robot operates on system Ubuntu 18.04 - ROS Melodic and works together wit
 https://www.arduino.cc/en/software
 
 ```
+cd Downloads/
 tar -xvf arduino-1.8.19-linuxaarch64.tar.xz
 cd arduino 1.8.19/
 sudo ./install.sh
@@ -57,3 +58,9 @@ sudo apt install libeigen3-dev
 sudo apt update
 sudo apt upgrade
 ```
+
+Create Workspace
+```
+mkdir catkin_ws
+cd catkin_ws/
+git clone 
