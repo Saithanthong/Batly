@@ -38,7 +38,7 @@ sudo ldconfig
 ```
 
 
-#installation Inpendencies
+## installation Inpendencies
 ```
 sudo apt-get install ros-melodic-slam-gmapping 
 sudo apt-get install ros-melodic-rviz
@@ -63,8 +63,10 @@ sudo apt update
 sudo apt upgrade
 ```
 
-Create Workspace
+## Create Workspace
 ```
 mkdir catkin_ws
 cd catkin_ws/
 git clone https://github.com/Saithanthong/Batly.git
+cd ~/catkin_ws/
+catkin bui
