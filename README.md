@@ -1,4 +1,8 @@
-# Installation Arduino
+# Batly Robot
+Batly robot operates on system Ubuntu 18.04 - ROS Melodic and works together with OKDO nano c100 
+
+
+## Installation Arduino
 https://www.arduino.cc/en/software
 
 ```
@@ -7,7 +11,7 @@ cd arduino 1.8.19/
 sudo ./install.sh
 ```
 
-Installation Teensyduino
+## Installation Teensyduino
 ```
 wget https://www.pjrc.com/teensy/00-teensy.rules
 sudo cp 00-teensy.rules /etc/udev/rules.d/
