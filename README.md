@@ -15,7 +15,6 @@ tar -xvf arduino-1.8.19-linuxaarch64.tar.xz
 cd arduino 1.8.19/
 sudo ./install.sh
 ```
-
 ## Teensyduino Installation
 ```
 wget https://www.pjrc.com/teensy/00-teensy.rules
@@ -26,7 +25,6 @@ cd Downloads/
 chmod 755 TeensyduinoInstall.linuxaarch64
 ./TeensyduinoInstall.linuxaarch64
 ```
-
 ## Ros-Drivers Installation
 ```
 git clone https://github.com/ros-drivers/libuvc_ros.git
@@ -36,8 +34,6 @@ cmak .. && make -j4
 sudo make install
 sudo ldconfig
 ```
-
-
 ### Inpendencies Installation
 ```
 sudo apt-get install ros-melodic-slam-gmapping 
@@ -62,7 +58,6 @@ sudo apt install libeigen3-dev
 sudo apt update
 sudo apt upgrade
 ```
-
 ## Create Workspace
 ```
 mkdir catkin_ws
@@ -78,15 +73,12 @@ roscore
 rosrun rosserial_server serial_node rtosserial_python serial_node.py /dev/ttyACM0
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-
 ### Teleop keyboard
 ```
 roscore
 rosrun rosserial_server serial_node rosserial_python serial_node.py /dev/ttyACM0
 roslaunch teleop_twist_joy teleop.launch
 ```
-
-
 # Mapping Mode
 ### Mapping with keyboard
 ```
@@ -95,8 +87,6 @@ rosrun rosserial_server serial_node rtosserial_python serial_node.py /dev/ttyACM
 roslaunch batly mapping.launch
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-
-
 ### Mapping with joy-stick
 ```
 roscore
@@ -112,6 +102,20 @@ rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
 roslaunch batly navigation.launch
 ```
 # 3D Camera
+```
+
+```
+
+
+
+
+
+# Master Control Mode
+### on robot
+```
+
+```
+### on master computer
 ```
 
 ```
