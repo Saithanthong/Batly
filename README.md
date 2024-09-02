@@ -25,7 +25,7 @@ cd Downloads/
 chmod 755 TeensyduinoInstall.linuxaarch64
 ./TeensyduinoInstall.linuxaarch64
 ```
-## Ros-Drivers Installation
+### Ros-Drivers Installation
 ```
 git clone https://github.com/ros-drivers/libuvc_ros.git
 cd libuvc/
@@ -58,7 +58,7 @@ sudo apt install libeigen3-dev
 sudo apt update
 sudo apt upgrade
 ```
-## Create Workspace
+# Create Workspace
 ```
 git clone https://github.com/Saithanthong/Batly.git
 cd ~/catkin_ws/
