@@ -73,7 +73,7 @@ catkin build
 ```
 
 
-## Mapping Mode
+# Mapping Mode
   ### Mapping with keyboard
   ```
   roscore
@@ -91,7 +91,7 @@ catkin build
   roslaunch teleop_twist_joy teleop.launch
   ```
 
-## Navigation Mode
+# Navigation Mode
 ```
 roscore
 rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
