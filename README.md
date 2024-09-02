@@ -71,13 +71,27 @@ git clone https://github.com/Saithanthong/Batly.git
 cd ~/catkin_ws/
 catkin build
 ```
+# Teleop Mode
+### Teleop keyboard
+```
+roscore
+rosrun rosserial_server serial_node rtosserial_python serial_node.py /dev/ttyACM0
+ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+### Teleop keyboard
+```
+roscore
+rosrun rosserial_server serial_node rosserial_python serial_node.py /dev/ttyACM0
+roslaunch teleop_twist_joy teleop.launch
+```
 
 
 # Mapping Mode
-  ### Mapping with keyboard
+### Mapping with keyboard
   ```
   roscore
-  rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+  rosrun rosserial_server serial_node rtosserial_python serial_node.py /dev/ttyACM0
   roslaunch batly mapping.launch
   rosrun teleop_twist_keyboard teleop_twist_keyboard.py
   ```
@@ -86,7 +100,7 @@ catkin build
   ### Mapping with joy-stick
   ```
   roscore
-  rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+  rosrun rosserial_server serial_node rosserial_python serial_node.py /dev/ttyACM0
   roslaunch batly mapping.launch
   roslaunch teleop_twist_joy teleop.launch
   ```
@@ -96,4 +110,8 @@ catkin build
 roscore
 rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
 roslaunch batly navigation.launch
+```
+# 3D Camera
+```
+
 ```
