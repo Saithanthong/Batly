@@ -74,22 +74,22 @@ catkin build
 
 
 ## Mapping Mode
-### Mapping with keyboard
-```
-roscore
-rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
-roslaunch batly mapping.launch
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-```
+  ### Mapping with keyboard
+  ```
+  roscore
+  rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+  roslaunch batly mapping.launch
+  rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+  ```
 
 
-### Mapping with joy-stick
-```
-roscore
-rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
-roslaunch batly mapping.launch
-roslaunch teleop_twist_joy teleop.launch
-```
+  ### Mapping with joy-stick
+  ```
+  roscore
+  rosrun rosserial_server serial_node rtosserial_python /dev/ttyACM0
+  roslaunch batly mapping.launch
+  roslaunch teleop_twist_joy teleop.launch
+  ```
 
 ## Navigation Mode
 ```
