@@ -16,6 +16,7 @@ cd arduino 1.8.19/
 sudo ./install.sh
 ```
 ## Teensyduino Installation
+https://forum.pjrc.com/index.php?threads/teensyduino-1-57-beta-1.70196/
 ```
 wget https://www.pjrc.com/teensy/00-teensy.rules
 sudo cp 00-teensy.rules /etc/udev/rules.d/
