@@ -111,9 +111,11 @@ roslaunch batly navigation.launch
 # Master Control Mode
 ### on robot
 ```
-
+export ROS_MASTER  URI=http://{ MASTER_IP }:11311
+export ROS_IP={ ROBOT_IP } 
 ```
 ### on master computer
 ```
-
+export ROS_MASTER  URI=http://{ MASTER_IP }:11311
+export ROS_IP={ MASTER_IP } 
 ```
