@@ -1,6 +1,9 @@
 # Batly Robot
 Batly robot operates on system Ubuntu 18.04 - ROS Melodic and works together with OKDO nano c100 
 
+# Data Information
+https://drive.google.com/drive/folders/1arJcAn_-knLZPGoHLQj_kcoQgw27klcZ?usp=sharing
+
 
 ## ROS Installation 
 https://wiki.ros.org/melodic/Installation/Ubuntu
